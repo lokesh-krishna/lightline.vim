@@ -55,9 +55,9 @@ let s:p.normal.warning = [ [ s:yellow, s:bg ] ]
 let s:p.insert.right   = [ [ s:bg, s:blue, 'bold' ], [ s:bg, s:blue, 'bold' ] ]
 let s:p.replace.right  = [ [ s:bg, s:red1, 'bold' ], [ s:bg, s:red1, 'bold' ] ]
 let s:p.visual.right   = [ [ s:bg, s:purple, 'bold' ], [ s:bg, s:purple, 'bold' ] ]
-let s:p.tabline.left   = [ [ s:bg, s:gray3 ] ]
+let s:p.tabline.left   = [ [ s:fg, s:gray3 ] ]
 let s:p.tabline.tabsel = [ [ s:bg, s:purple, 'bold' ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
-let s:p.tabline.right  = copy(s:p.normal.right)
+let s:p.tabline.right  = [ [ s:bg, s:red, 'bold' ] ]
 
 let g:lightline#colorscheme#materia#palette = lightline#colorscheme#fill(s:p)
